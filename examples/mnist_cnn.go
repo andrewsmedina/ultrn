@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/andrewsmedina/ultn/datasets/mnist"
-	"github.com/andrewsmedina/ultn/models"
-	"github.com/andrewsmedina/ultn/layers"
+	"github.com/andrewsmedina/ultrn/datasets/mnist"
+	"github.com/andrewsmedina/ultrn/models"
+	"github.com/andrewsmedina/ultrn/layers"
 
 )
 // import keras
@@ -24,7 +24,7 @@ func main() {
 	imCols := 28
 
 
-	xTrain, yTrain, xTest, yTest := mnist.loadData()
+	xTrain, yTrain, xTest, yTest := mnist.LoadData()
 	xTrain := xTrain.reshape(xTrain.shape[0], imgRows, imgCols, 1)
 	xTest := xTest.reshape(xTest.shape[0], imgRows, imgCols, 1)
 
